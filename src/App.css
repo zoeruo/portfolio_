@@ -1,3 +1,41 @@
+/* fonts */
+@font-face {
+  font-family: Mukta;
+  src: url('./asset/fonts/Mukta-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Mukta;
+  src: url('./asset/fonts/Mukta-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face{
+  font-family: YesevaOne;
+  src: url('./asset/fonts/YesevaOne-Regular.ttf');
+  font-weight: 400;
+}
+
+/* color */
+.bg-theme{
+  background-color: #F1F1E6;
+}
+.bg_white{
+  background-color: #FDFDFD;
+}
+
+
+body {
+  font-family: 'Mukta', sans-serif !important;
+  color: #090909;
+}
+
+.banner h1{
+  font-family:'YesevaOne', sans-serif;
+  font-size: 60px;
+}
+
+
+/* Default css */
 .App {
   text-align: center;
 }
