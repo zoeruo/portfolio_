@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import TrackVisibility from 'react-on-screen';
-import bannerimg from '../asset/bannerimg.png';
+import bannerimg from '../asset/img/bannerimg.png';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -46,19 +46,18 @@ export const Banner = () => {
   }
 
   return (
-    <section className="banner" id="home">
+    <section className="banner bg-theme pt-3" id="home">
       <Container>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={6} className="my-auto">
             <h1>Hi, this is Zoe Lo</h1>
             <h1><span className="wrap">{text}</span></h1>
           </Col>
           <Col xs={12} md={6}>
-            <img src={bannerimg} alt="Banner img" />
+            <img src={bannerimg} className="img-fluid" alt="Banner img" />
           </Col>
         </Row>
       </Container>
-
     </section>
 
   )

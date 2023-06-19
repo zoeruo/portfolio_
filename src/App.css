@@ -29,9 +29,25 @@ body {
   color: #090909;
 }
 
+
+h1.display{
+  font-family:'YesevaOne', sans-serif;
+  font-size: 35px;
+}
+
+h2.shortdesc{
+  font-family: 'Mukta', sans-serif !important;
+  font-weight:600;
+  font-size:20px;
+}
+
+.banner{
+
+}
+
 .banner h1{
   font-family:'YesevaOne', sans-serif;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 

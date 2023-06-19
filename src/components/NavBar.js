@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import logo from "../asset/logo.svg";
 
 export const NavBar = () => {
@@ -9,13 +11,14 @@ export const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav className="me-auto ms-auto">
-                        <Nav.Link href="#">ABOUT</Nav.Link>
-                        <Nav.Link href="#">PROJECTS</Nav.Link>
-                        <Nav.Link href="#">PLAYGROUND</Nav.Link>
+                        <Link to="/" className="nav-link">ABOUT</Link>
+                        <Link to="/" className="nav-link">PROJECTS</Link>
+                        <Link to="/RedFlagsOut" className="nav-link">PLAYGROUND</Link>
+                        {/* <Nav.Link href="#">PLAYGROUND</Nav.Link> */}
 
                     </Nav>
                     <Nav className="">
-                        <Nav.Link href="#">RESUME</Nav.Link>
+                        <Link to="/" className="nav-link">RESUME</Link>
                     </Nav>
                 </Navbar.Collapse>
 
@@ -24,3 +27,5 @@ export const NavBar = () => {
         </Navbar>
     )
 }
+
+export default NavBar;
