@@ -13,7 +13,7 @@ export const NavBar = () => {
                     <Nav className="me-auto ms-auto">
                         <Link to="/" className="nav-link">ABOUT</Link>
                         <Link to="/" className="nav-link">PROJECTS</Link>
-                        <Link to="/RedFlagsOut" className="nav-link">PLAYGROUND</Link>
+                        <Link to="/ProjectDetail/RedFlagsOut" className="nav-link">PLAYGROUND</Link>
                         {/* <Nav.Link href="#">PLAYGROUND</Nav.Link> */}
 
                     </Nav>

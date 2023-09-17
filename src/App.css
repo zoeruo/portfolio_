@@ -12,6 +12,12 @@
 }
 
 @font-face {
+  font-family: Mukta;
+  src: url('./asset/fonts/Mukta-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
   font-family: YesevaOne;
   src: url('./asset/fonts/YesevaOne-Regular.ttf');
   font-weight: 400;
@@ -75,6 +81,7 @@ p {
 
 .div_slider h4 {
   margin-bottom: 0;
+  font-weight:500;
 }
 
 .my-arrow {

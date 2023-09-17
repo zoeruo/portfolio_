@@ -28,6 +28,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import RedFlagsOut from "./pages/RedFlagsOut";
+import ProjectDetail from "./pages/ProjectDetail";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -37,7 +38,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="RedFlagsOut" element={<RedFlagsOut />} />
+          {/* <Route path="RedFlagsOut" element={<RedFlagsOut />} /> */}
+          <Route path="ProjectDetail/:title" element={<ProjectDetail />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

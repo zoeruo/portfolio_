@@ -12,7 +12,7 @@ export const Project = () => {
     return (
         <section className="bg-white">
             <Container>
-                <Row>
+                <Row className="py-2">
                     <Col md={12}>
                         <h3>PROJECT</h3>
                     </Col>
@@ -27,7 +27,15 @@ export const Project = () => {
                 </Row> */}
                 <Row>
                     <Col md={12}>
-                        <Splide hasTrack={false} aria-label="..." data-splide='{"type":"loop","perPage":3}'>
+                        <Splide hasTrack={false} options={{
+                            type: 'loop',
+                            perPage: 3,
+                            rewind : true
+                            
+                        }}
+                            aria-label=""
+                        >
+                            {/* hasTrack={false} aria-label="..." data-splide='{"type":"loop","perPage":3}'> */}
                             <SplideTrack>
                                 <SplideSlide>
                                     <div className="div_slider splide__slide__container">
@@ -51,21 +59,18 @@ export const Project = () => {
                                     </div>
                                 </SplideSlide>
                             </SplideTrack>
-                            <div className="splide__arrows">
-                                <button className="splide__arrow splide__arrow--prev my-arrow"><img src={arrowleft} /></button>
+                            {/* <div className="splide__arrows">
+                                <button className="splide__arrow splide__arrow--prev my-arrow"><img src={arrowleft} style={{ width: 40 }} /></button>
                                 <button className="splide__arrow splide__arrow--next my-arrow"><img src={arrowright} /></button>
-                            </div>
+                            </div> */}
                         </Splide>
                     </Col>
                 </Row>
 
+                
+
             </Container>
-
-
-
         </section>
     )
-
-
 
 }

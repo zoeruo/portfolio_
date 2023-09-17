@@ -18,23 +18,23 @@ function RedFlagsOut(props) {
       </Container>
       <div className="bg-theme">
         <Container >
-          <Row>
-            <Col xs={12} md={6}>
+          <Row className = "py-3">
+            <Col xs={12} md={12} className="py-3">
               <h3>Overview</h3>
               <p>Red Flags Out is dedicated to fostering healthy and respectful relationships by addressing the frequently overlooked issue of red flags in the realm of dating.</p>
               <p>Our primary objective is to establish a dating environment that prioritizes respect, communication, and trust. Through our platform, we encourage open and honest conversations about boundaries and dealbreakers, empowering individuals to recognize and address potential red flags before entering into relationships. We equip users with the necessary tools, resources, and guidance to identify and navigate these warning signs during the process of forming meaningful connections.</p>
               <p>By proactively promoting a safe and supportive space, we aim to prevent potentially dangerous or unhealthy relationships from taking root. Red Flags Out aims to revolutionize the dating landscape, facilitating the cultivation of healthy, fulfilling relationships based on mutual respect and shared values.</p>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={12} className="py-3">
               <h3>Duration</h3>
               <p>9 Weeks<br />
                 9 March - 11 May 2023</p>
-              <h3>Deliverables</h3>
+              {/* <h3>Deliverables</h3>
               <p>Requirements<br />
                 Main Tasks<br />
                 Rough Drafts<br />
                 Components<br />
-                Screen Designs</p>
+                Screen Designs</p> */}
             </Col>
           </Row>
         </Container>

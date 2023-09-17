@@ -1,15 +1,33 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import TrackVisibility from 'react-on-screen';
+import bdesign from '../asset/img/designing.png';
+import bcode from '../asset/img/coding.png';
+import bpiano from '../asset/img/pianoing.png';
 import bannerimg from '../asset/img/bannerimg.png';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
+  const [imgSrc, setImgSrc] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["I Design,", "I Write Codes,", "I Play the Piano"];
+  // const toRotate = ["I Design,", "I Write Codes,", "I Play the Piano"];
+  const toRotate = [
+    {
+      txt: "I Design",
+      img: bdesign
+    },
+    {
+      txt: "I Write Codes",
+      img: bcode
+    },
+    {
+      txt: "I Play the Piano",
+      img: bpiano
+    }
+  ]
   const period = 2000;
 
   useEffect(() => {
@@ -22,10 +40,12 @@ export const Banner = () => {
 
   const tick = () => {
     let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
+    let fullText = toRotate[i].txt;
+    let updatedImg = toRotate[i].img;
     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
+    setImgSrc(updatedImg);
 
     if (isDeleting) {
       setDelta(prevDelta => prevDelta / 2);
@@ -54,7 +74,7 @@ export const Banner = () => {
             <h1><span className="wrap">{text}</span></h1>
           </Col>
           <Col xs={12} md={6}>
-            <img src={bannerimg} className="img-fluid" alt="Banner img" />
+            <img src={imgSrc} className="img-fluid" alt="Banner img" />
           </Col>
         </Row>
       </Container>
