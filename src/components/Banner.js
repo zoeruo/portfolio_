@@ -11,7 +11,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [imgSrc, setImgSrc] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(120 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   // const toRotate = ["I Design,", "I Write Codes,", "I Play the Piano"];
   const toRotate = [

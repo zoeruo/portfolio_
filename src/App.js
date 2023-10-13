@@ -31,6 +31,7 @@ import RedFlagsOut from "./pages/RedFlagsOut";
 import ProjectDetail from "./pages/ProjectDetail";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -41,8 +42,10 @@ function App() {
           {/* <Route path="RedFlagsOut" element={<RedFlagsOut />} /> */}
           <Route path="ProjectDetail/:title" element={<ProjectDetail />} />
           {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="asset/Resume.pdf"/>
         </Route>
       </Routes>
+      <ScrollToTop />
     </BrowserRouter>
   );
 }

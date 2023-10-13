@@ -2,23 +2,25 @@ import { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import logo from "../asset/logo.svg";
+import Pdf from '../asset/Resume.pdf';
 
 export const NavBar = () => {
     return (
         <Navbar bg="theme" expand="lg">
             <Container>
-                <Navbar.Brand href="#home"><img src={logo} width="36px" /></Navbar.Brand>
+                <Navbar.Brand href="#home"><Link to="/" className="nav-link"><img src={logo} width="36px" /></Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav className="me-auto ms-auto">
-                        <Link to="/" className="nav-link">ABOUT</Link>
-                        <Link to="/" className="nav-link">PROJECTS</Link>
-                        <Link to="/ProjectDetail/RedFlagsOut" className="nav-link">PLAYGROUND</Link>
+                        {/* <Link to="/" className="nav-link">ABOUT</Link> */}
+                        <Link to="/#Project" className="nav-link">PROJECTS</Link>
+                        <Link to="/#Playground" className="nav-link">PLAYGROUND</Link>
                         {/* <Nav.Link href="#">PLAYGROUND</Nav.Link> */}
 
                     </Nav>
                     <Nav className="">
-                        <Link to="/" className="nav-link">RESUME</Link>
+                        {/* <Link to="../asset/Resume.pdf" className="nav-link" target="_blank">RESUME</Link> */}
+                        <a href = {Pdf} className="nav-link" target = "_blank">RESUME</a>
                     </Nav>
                 </Navbar.Collapse>
 

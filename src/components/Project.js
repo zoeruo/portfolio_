@@ -1,8 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
-import redflagsimg from '../asset/img/RedFlagsOut_projects.png';
-import chghimg from '../asset/img/CHGH_projects.png';
-import deepdive from '../asset/img/Deepdive_projects.png';
+import { Link } from "react-router-dom";
+import redflagsimg from '../asset/img/RFO_m0.png';
+import chghimg from '../asset/img/CHGH_m0.png';
+import deepdive from '../asset/img/DD_m0.png';
 import arrowright from '../asset/img/arrow_right.png';
 import arrowleft from '../asset/img/arrow_left.png';
 import '@splidejs/react-splide/css';
@@ -10,22 +11,33 @@ import '@splidejs/react-splide/css';
 export const Project = () => {
 
     return (
-        <section className="bg-white">
+        <section id ="Project" className="bg-white">
             <Container>
                 <Row className="py-2">
                     <Col md={12}>
                         <h3>PROJECT</h3>
                     </Col>
                 </Row>
-                {/* <Row>
+                <Row>
                     <Col md={4}>
-                        <a href="#"><img src={redflagsimg} className="img-fluid" alt="" /></a>
-                        <h4>Red Flags Out | 2023</h4>
+                        <Link to="/ProjectDetail/RedFlagsOut" className="nav-link"><img src={redflagsimg} className="img-fluid mb-3" alt="" /></Link>
+                        <h5 className="mb-1">Red Flags Out | 2023</h5>
                         <p>A dating app focusing on RedFlags</p>
                     </Col>
+                    <Col md={4}>
+                        <Link to="/ProjectDetail/Deepdive" className="nav-link"><img src={deepdive} className="img-fluid mb-3" alt="" /></Link>
+                        <h5 className="mb-1">Deepdive | 2023</h5>
+                        <p>A learning and tracking app for freedivers</p>
+                    </Col>
+                    <Col md={4}>
+                        <Link to="/ProjectDetail/CHGH" className="nav-link"><img src={chghimg} className="img-fluid mb-3" alt="" /></Link>
+                        <h5 className="mb-1">Cheng Hsin General Hospital | 2020</h5>
+                        <p>Responsive Web Design</p>
+                    </Col>
+                    
 
-                </Row> */}
-                <Row>
+                </Row>
+                {/* <Row>
                     <Col md={12}>
                         <Splide hasTrack={false} options={{
                             type: 'loop',
@@ -35,7 +47,7 @@ export const Project = () => {
                         }}
                             aria-label=""
                         >
-                            {/* hasTrack={false} aria-label="..." data-splide='{"type":"loop","perPage":3}'> */}
+                            
                             <SplideTrack>
                                 <SplideSlide>
                                     <div className="div_slider splide__slide__container">
@@ -59,15 +71,15 @@ export const Project = () => {
                                     </div>
                                 </SplideSlide>
                             </SplideTrack>
-                            {/* <div className="splide__arrows">
+                            <div className="splide__arrows">
                                 <button className="splide__arrow splide__arrow--prev my-arrow"><img src={arrowleft} style={{ width: 40 }} /></button>
                                 <button className="splide__arrow splide__arrow--next my-arrow"><img src={arrowright} /></button>
-                            </div> */}
+                            </div>
                         </Splide>
                     </Col>
-                </Row>
+                </Row> */}
 
-                
+
 
             </Container>
         </section>
