@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, useParams } from 'react-router-dom';
 import parse from "html-react-parser";
 import { contents } from './ProjectsContent';
+import Youtube from "../components/Youtube";
 
 
 function ProjectDetail(props) {
@@ -65,10 +66,23 @@ function ProjectDetail(props) {
                             <h3>Creating Process</h3>
                         </Col><Col xs={12} md={7} className="py-c">
                                 <React.Fragment>{parse(content.creatingprocess.txt)}</React.Fragment>
-                                <img src={content.creatingprocess.img} className="img-fluid my-2" alt="" />
-                                
+                                {content.creatingprocess.img.map(item => (
+                                    <>
+                                        <img src={item.img} className="img-fluid mt-3" alt="" onClick={handleShow} />
+                                        <p className=''>{item.txt}</p>
+
+                                    </>
+                                ))}
                             </Col></>
                     }
+                    {content.hasOwnProperty('youtube') &&
+                        <><Col xs={12} md={5} className="py-c">
+                            <h3>Documentation Video</h3>
+                        </Col><Col xs={12} md={7} className="py-c">
+                                <Youtube videoID={content.youtube} />
+                            </Col></>
+                    }
+
                     {content.hasOwnProperty('teammembers') &&
                         <><Col xs={12} md={5} className="py-c">
                             <h3>Team Members</h3>
@@ -268,6 +282,13 @@ function ProjectDetail(props) {
                                 <p><React.Fragment>{parse(content.development)}</React.Fragment></p>
                             </Col>
                         </>
+                    }
+                                        {content.hasOwnProperty('achievement') &&
+                        <><Col xs={12} md={5} className="py-c">
+                            <h3>Achievements</h3>
+                        </Col><Col xs={12} md={7} className="py-c">
+                                <React.Fragment>{parse(content.achievement)}</React.Fragment>
+                            </Col></>
                     }
                     {content.hasOwnProperty('reflection') &&
                         <>

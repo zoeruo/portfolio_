@@ -162,12 +162,15 @@ p {
   bottom: 4rem;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   scale: 200%;
-  }
+}
+
 .carousel-control-prev-icon {
   background-image: url("./asset/img/arrow_left.svg");
 }
+
 .carousel-control-next-icon {
   background-image: url("./asset/img/arrow_right.svg");
 }
@@ -176,3 +179,35 @@ p {
 .zoom {
   cursor: url("./asset/img/zoomin.svg"), auto;
 }
+
+
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25;
+  height: 0
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+
+}
+
+
+/* animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.fade-in-image { animation: fadeIn 2s; }
+.fade-out-image { animation: fadeOut 2s; }

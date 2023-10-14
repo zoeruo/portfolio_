@@ -13,14 +13,26 @@ export const NavBar = () => {
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav className="me-auto ms-auto">
                         {/* <Link to="/" className="nav-link">ABOUT</Link> */}
-                        <Link to="/#Project" className="nav-link">PROJECTS</Link>
-                        <Link to="/#Playground" className="nav-link">PLAYGROUND</Link>
+                        <Link to="/#Project" className="nav-link" onClick={(e) => {
+                            e.preventDefault();
+                            window.scrollTo({
+                                top: document.querySelector("#Project").offsetTop,
+                                behavior: "smooth",
+                            });
+                        }}>PROJECTS</Link>
+                        <Link to="/#Playground" className="nav-link" onClick={(e) => {
+                            e.preventDefault();
+                            window.scrollTo({
+                                top: document.querySelector("#Playground").offsetTop,
+                                behavior: "smooth",
+                            });
+                        }}>PLAYGROUND</Link>
                         {/* <Nav.Link href="#">PLAYGROUND</Nav.Link> */}
 
                     </Nav>
                     <Nav className="">
                         {/* <Link to="../asset/Resume.pdf" className="nav-link" target="_blank">RESUME</Link> */}
-                        <a href = {Pdf} className="nav-link" target = "_blank">RESUME</a>
+                        <a href={Pdf} className="nav-link" target="_blank">RESUME</a>
                     </Nav>
                 </Navbar.Collapse>
 

@@ -86,11 +86,12 @@ export const contents = {
         "img": imgchgh,
         "title": "Cheng Hsin General Hospital",
         "subtitle": "Responsive Web Design",
-        "overview": "Cheng Hsin General Hospital is a modern general hospital located in Taipei, and it is famous for cardiology. The goal of this project was to build a responsive website featuring the new international medical services and provide more convenient online services for the general public.",
+        "overview": "Cheng Hsin General Hospital is a modern general hospital located in Taipei, and it is famous for cardiology. The goal of this project was to build a responsive website featuring the new international medical services and provide more convenient online services for the general public.&nbsp;&nbsp;<a href='https://www.chgh.org.tw/Index.aspx' target='blank'>Go to CHGH</a>",
         "duration": "Jun 2019 - Oct 2020",
         "role": "<ul><li>Integrated the needs of 80+ departments.</li><li>Executed from design to web development.</li><li>Improved usability according to feedbacks from users</li></ul>",
         "problemstatement": "The previous hospital website was constructed nearly a decade ago. Given the hospital's substantial expansion of services, the old website became inadequate for accommodating the extensive information. For instance, the recently established International Medical Services Center necessitated a multi-language website to cater to international patients. Additionally, the inability of departments to edit their information on the old website, due to outsourcing, posed significant inconvenience.",
-        "development": "Our team used .NET to build the four websites. Once I confirmed the design, I began developing the websites using HTML, CSS, and JavaScript. Meanwhile, other engineers focused on the back-end code. The schedule was tight, and due to time constraints, we had to develop and test simultaneously. When the project was approximately 80% complete, my teammates shifted their focus to other systems. I took full responsibility for completing the websites and publishing them independently. Throughout the development process, I directly received feedback and continuously improved the functionality by incorporating their requirements."
+        "development": "Our team used .NET to build the four websites. Once I confirmed the design, I began developing the websites using HTML, CSS, and JavaScript. Meanwhile, other engineers focused on the back-end code. The schedule was tight, and due to time constraints, we had to develop and test simultaneously. When the project was approximately 80% complete, my teammates shifted their focus to other systems. I took full responsibility for completing the websites and publishing them independently. Throughout the development process, I directly received feedback and continuously improved the functionality by incorporating their requirements.",
+        
     },
     TheWindow: {
         "url": "TheWindow",
@@ -102,9 +103,13 @@ export const contents = {
         "role": "<ul><li>Lead the team.</li><li>Solve communication problems within the team</li><li>Code the interaction for the lights.</li>",
         "creatingprocess": {
             "txt": "To make the three-meter-tall installation stand in the wind, we sought advice from an iron factory professional. To make it stand in the rain, we applied waterproof measures. We laser-cut small dots on acrylic to make the entire area shine, and we used Arduino to control the light. Sitting in front of The Window, I solely defined the lighting styles and wrote the code.",
-            "img": twci,
-            "video": twcv
-        }
+            "img": [{ img: twci, txt: "Renovate & Maintain" }]
+        },
+        "youtube": "J10e9a6VZ8Q",
+        "achievement": "<ul><li>1st KuanDu Light Art Festival</li><li>2017 Nuit Blanche Taipei</li><li>Tsing Hua Effects 2018 – IoT Technology and Art Festival</li>"
+    },
+    SwimmingFishes:{
+
     }
 
 }
