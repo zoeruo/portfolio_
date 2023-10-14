@@ -11,7 +11,7 @@ import '@splidejs/react-splide/css';
 export const Project = () => {
 
     return (
-        <section id ="Project" className="bg-white">
+        <section id ="Project" className="bg-white" >
             <Container>
                 <Row className="py-2">
                     <Col md={12}>

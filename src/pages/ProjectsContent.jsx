@@ -23,6 +23,7 @@ import imgchgh from '../asset/img/CHGH_m0.png';
 import imgTW from '../asset/img/TW_m0.png';
 import twcv from '../asset/videos/TW_creating.MP4';
 import twci from '../asset/img/TW_c0.jpg';
+import imgsf from '../asset/img/SF_m0.png';
 
 export const contents = {
     RedFlagsOut: {
@@ -109,6 +110,13 @@ export const contents = {
         "achievement": "<ul><li>1st KuanDu Light Art Festival</li><li>2017 Nuit Blanche Taipei</li><li>Tsing Hua Effects 2018 – IoT Technology and Art Festival</li>"
     },
     SwimmingFishes:{
+        "url": "SwimmingFishes",
+        "img": imgsf,
+        "title": "SwimmingFishes",
+        "subtitle": "Maya 3D Animation",
+        "overview": "The 3D animation created with Maya was designed for the two LED display columns in my apartment building. I transformed the static interior design into dynamic images.",
+        "duration": "Jan 2019",
+        "youtube": "WVzFDd_CXkM",
 
     }
 
