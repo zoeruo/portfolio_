@@ -25,13 +25,13 @@ export const Playground = () => {
                         <p>An interactive sound canvas created by P5.js</p>
                     </Col>
                     <Col md={4}>
-                        <Link to="/ProjectDetail/TheWindow" className="nav-link"><img src={swimmingfishesimg} className="img-fluid mb-3" alt="" /></Link>
-                        <Link to="/ProjectDetail/TheWindow" className="nav-link"><h5 className="mb-1">Swimming Fishes | 2019</h5></Link>
+                        <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><img src={swimmingfishesimg} className="img-fluid mb-3" alt="" /></Link>
+                        <Link to="/ProjectDetail/SwimmingFishes" className="nav-link"><h5 className="mb-1">Swimming Fishes | 2019</h5></Link>
                         <p>Maya 3D Animation</p>
                     </Col>
                     <Col md={4}>
                         <Link to="/ProjectDetail/TheWindow" className="nav-link"><img src={thewindowimg} className="img-fluid mb-3" alt="" /></Link>
-                        <h5 className="mb-1">The Window | 2017</h5>
+                        <Link to="/ProjectDetail/TheWindow" className="nav-link"><h5 className="mb-1">The Window | 2017</h5></Link>
                         <p>Installaton Art</p>
                     </Col>
            

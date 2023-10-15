@@ -21,21 +21,20 @@ export const Project = () => {
                 <Row>
                     <Col md={4}>
                         <Link to="/ProjectDetail/RedFlagsOut" className="nav-link"><img src={redflagsimg} className="img-fluid mb-3" alt="" /></Link>
-                        <h5 className="mb-1">Red Flags Out | 2023</h5>
+                        <Link to="/ProjectDetail/RedFlagsOut" className="nav-link"><h5 className="mb-1">Red Flags Out | 2023</h5></Link>
                         <p>A dating app focusing on RedFlags</p>
                     </Col>
                     <Col md={4}>
                         <Link to="/ProjectDetail/Deepdive" className="nav-link"><img src={deepdive} className="img-fluid mb-3" alt="" /></Link>
-                        <h5 className="mb-1">Deepdive | 2023</h5>
+                        <Link to="/ProjectDetail/Deepdive" className="nav-link"><h5 className="mb-1">Deepdive | 2023</h5></Link>
                         <p>A learning and tracking app for freedivers</p>
                     </Col>
                     <Col md={4}>
                         <Link to="/ProjectDetail/CHGH" className="nav-link"><img src={chghimg} className="img-fluid mb-3" alt="" /></Link>
-                        <h5 className="mb-1">Cheng Hsin General Hospital | 2020</h5>
+                        <Link to="/ProjectDetail/CHGH" className="nav-link"><h5 className="mb-1">Cheng Hsin General Hospital | 2020</h5></Link>
                         <p>Responsive Web Design</p>
                     </Col>
                     
-
                 </Row>
                 {/* <Row>
                     <Col md={12}>
