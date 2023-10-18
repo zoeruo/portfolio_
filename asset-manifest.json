@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d37d3eb7.css",
-    "main.js": "/static/js/main.a738f028.js",
+    "main.js": "/static/js/main.bb631733.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
     "static/media/TW_creating.MP4": "/static/media/TW_creating.8927d9f6cbd1d174458a.MP4",
     "static/media/pianoing.png": "/static/media/pianoing.76f22de3de1118af1466.png",
@@ -40,17 +40,17 @@
     "static/media/YesevaOne-Regular.ttf": "/static/media/YesevaOne-Regular.77e7411de8c57683e277.ttf",
     "static/media/DD_w1.png": "/static/media/DD_w1.9657cbd04a1afbb44f8e.png",
     "static/media/Resume.pdf": "/static/media/Resume.6338b5da61b7248ed698.pdf",
+    "index.html": "/index.html",
     "static/media/arrow_left.svg": "/static/media/arrow_left.db613b2525469ddc47e5.svg",
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/zoomin.svg": "/static/media/zoomin.1fe011ba16392c8aa817.svg",
-    "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
     "main.d37d3eb7.css.map": "/static/css/main.d37d3eb7.css.map",
-    "main.a738f028.js.map": "/static/js/main.a738f028.js.map",
+    "main.bb631733.js.map": "/static/js/main.bb631733.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d37d3eb7.css",
-    "static/js/main.a738f028.js"
+    "static/js/main.bb631733.js"
   ]
 }
