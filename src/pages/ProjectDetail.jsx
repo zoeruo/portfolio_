@@ -32,7 +32,7 @@ function ProjectDetail(props) {
     return (
         <div className="bg-theme">
             <Container>
-                <Row>
+                <Row className="py-3 py-md-0">
                     <Col xs={12} md={5} className="my-auto">
                         <h1 className="display">{content.title}</h1>
                         <h2 className="shortdesc">{content.subtitle}</h2>
@@ -41,7 +41,7 @@ function ProjectDetail(props) {
                         <img src={content.img} className="img-fluid" alt="Banner img" />
                     </Col>
                 </Row>
-                <Row className="py-c">
+                <Row className="">
                     <Col xs={12} md={5} className="py-c">
                         <h3>Overview</h3>
                     </Col>

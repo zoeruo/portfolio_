@@ -32,6 +32,9 @@ import ProjectDetail from "./pages/ProjectDetail";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ScrollToTop from "./components/ScrollToTop";
+// import ReactGA from 'react-ga';
+// ReactGA.initialize('348406288');
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (

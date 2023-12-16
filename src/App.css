@@ -137,10 +137,16 @@ p {
 }
 
 .py-c {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
-
+  padding-top: 1rem;
+  /* padding-bottom: 0.5rem; */
 }
+@include media-breakpoint-up(sm) {
+  .py-c {
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+  }
+}
+
 
 /* carousel */
 .carousel {
