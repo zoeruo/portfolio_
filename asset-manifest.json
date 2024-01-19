@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.b082221f.css",
-    "main.js": "/static/js/main.48fae266.js",
+    "main.css": "/static/css/main.c321cc55.css",
+    "main.js": "/static/js/main.24625202.js",
     "static/js/787.907a2fad.chunk.js": "/static/js/787.907a2fad.chunk.js",
+    "static/media/IMSLP_CaseStudy.pdf": "/static/media/IMSLP_CaseStudy.61d68bd708f0da04f11c.pdf",
     "static/media/TW_creating.MP4": "/static/media/TW_creating.8927d9f6cbd1d174458a.MP4",
     "static/media/pianoing.png": "/static/media/pianoing.76f22de3de1118af1466.png",
     "static/media/coding.png": "/static/media/coding.a681ad24be9f01451af5.png",
@@ -21,6 +22,7 @@
     "static/media/RFO_lf1.png": "/static/media/RFO_lf1.10c370d5844bdcc7fdd8.png",
     "static/media/RFO_components.png": "/static/media/RFO_components.e1bd09f17d63a2d155b4.png",
     "static/media/RFO_lf0.png": "/static/media/RFO_lf0.1904d561776ee890bf84.png",
+    "static/media/IMSLP_m0.png": "/static/media/IMSLP_m0.e0991110e1a3fb257eef.png",
     "static/media/RFO_hf5.png": "/static/media/RFO_hf5.9d5a64c405363b7e84b1.png",
     "static/media/Mukta-Regular.ttf": "/static/media/Mukta-Regular.044d4dd07d7636695eda.ttf",
     "static/media/Mukta-Medium.ttf": "/static/media/Mukta-Medium.1dbcaa3b34d2fe6808d3.ttf",
@@ -44,12 +46,12 @@
     "static/media/arrow_left.svg": "/static/media/arrow_left.db613b2525469ddc47e5.svg",
     "static/media/arrow_right.svg": "/static/media/arrow_right.ef8f21cb40e7ada176de.svg",
     "static/media/logo.svg": "/static/media/logo.61b029cda18a62aa361c6f2315ac03ff.svg",
-    "main.b082221f.css.map": "/static/css/main.b082221f.css.map",
-    "main.48fae266.js.map": "/static/js/main.48fae266.js.map",
+    "main.c321cc55.css.map": "/static/css/main.c321cc55.css.map",
+    "main.24625202.js.map": "/static/js/main.24625202.js.map",
     "787.907a2fad.chunk.js.map": "/static/js/787.907a2fad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b082221f.css",
-    "static/js/main.48fae266.js"
+    "static/css/main.c321cc55.css",
+    "static/js/main.24625202.js"
   ]
 }
